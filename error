@@ -1,18 +1,65 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
 public class Solution {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine().toLowerCase();
-        String goal = sc.nextLine().toLowerCase();
 
-        if (s.length() < 1 || s.length() > 100 || goal.length() < 1 || goal.length() > 100 || 
-            s.length() != goal.length()) {
-            System.out.println("false");
-        } else {
-            String L = s + s;
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        String str;
+        if(n>=0&&n<=9)
+        {
+         switch(n){
+            case '0':
+             str="Zero";
+             break;
             
-            System.out.println(L.contains(goal));
+            case '1':
+              str="One";
+             break; 
+                 
+             case '2':
+              str="Second";
+             break; 
+                 
+             case '3':
+              str="Three";
+             break; 
+                 
+             case '4':
+              str="Four";
+             break; 
+                 
+             case '5':
+              str="Five";
+             break; 
+                 
+             case '6':
+              str="Six";
+             break; 
+                 
+             case '7':
+              str="Seven";
+             break; 
+                 
+             case '8':
+              str="Eigth";
+             break; 
+                 
+             case '9':
+              str="Nine";
+             break; 
+                 
+            System.out.println("Integer is " +n+ " and String is "+str);
+        }
+        
+        }
+        else
+        {
+            System.out.println("Invalid Input");
         }
     }
 }
