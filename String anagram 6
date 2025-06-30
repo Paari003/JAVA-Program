@@ -20,9 +20,9 @@ public class Main {
 
         }
 
-        char[] ch1 = str1.toCharArray();
+        char ch1[]= str1.toCharArray();
 
-        char[] ch2 = str2.toCharArray();
+        char ch2[]= str2.toCharArray();
 
         Arrays.sort(ch1);
 
