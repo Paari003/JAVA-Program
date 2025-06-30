@@ -1,0 +1,66 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a=sc.nextInt();
+        char ch=sc.next().charAt(0);
+        cal obj=new cal();
+        switch(ch)
+        {
+            case '+':
+                obj.Add(n,a);
+                break;
+                
+            case '-':
+                obj.Sub(n,a);
+                break;
+                
+            case '*':
+                obj.Mul(n,a);
+                break;
+                
+            case '/':
+                obj.Div(n,a);
+                break; 
+                
+            case '%':
+                obj.Mod(n,a);
+                break; 
+                
+            default:
+                System.out.println("Invalid Input");
+    
+        }
+    }
+}
+class cal
+{
+    void Add(int n,int a)
+    {
+        System.out.printf("Addition of two number is %.1f",(float)n+a);
+    }
+    void Sub(int n,int a)
+    {
+        System.out.printf("Subtraction of two number is %.1f",(float)n-a);
+    }
+    void Mul(int n,int a)
+    {
+        System.out.printf("Mul of two number is %.1f",(float)n*a);
+    }
+    void Div(int n,int a)
+    {
+        System.out.printf("Div of two number is %.1f",(float)n/a);
+    }
+    void Mod(int n,int a)
+    {
+        System.out.printf("Mod of two number is %.1f",(float)n%a);
+    }
+     
+}
