@@ -1,66 +1,57 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
-
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int a=sc.nextInt();
-        char ch=sc.next().charAt(0);
-        cal obj=new cal();
-        switch(ch)
-        {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        char c = sc.next().charAt(0);
+        
+        Calculator obj = new Calculator();
+        switch (c) {
             case '+':
-                obj.Add(n,a);
+                obj.add(a, b);
                 break;
-                
             case '-':
-                obj.Sub(n,a);
+                obj.sub(a, b);
                 break;
-                
             case '*':
-                obj.Mul(n,a);
+                obj.mul(a, b);
                 break;
-                
             case '/':
-                obj.Div(n,a);
-                break; 
-                
+                obj.div(a, b);
+                break;
             case '%':
-                obj.Mod(n,a);
-                break; 
-                
+                obj.mod(a, b);
+                break;
             default:
                 System.out.println("Invalid Input");
-    
         }
     }
 }
-class cal
-{
-    void Add(int n,int a)
-    {
-        System.out.printf("Addition of two number is %.1f",(float)n+a);
+
+class Calculator {
+
+    void add(int a, int b) {
+        System.out.printf("Addition of two number is %.1f\n", (float)(a + b));
     }
-    void Sub(int n,int a)
-    {
-        System.out.printf("Subtraction of two number is %.1f",(float)n-a);
+
+    void sub(int a, int b) {
+        System.out.printf("Subtraction of two number is %.1f\n", (float)(a - b));
     }
-    void Mul(int n,int a)
-    {
-        System.out.printf("Mul of two number is %.1f",(float)n*a);
+
+    void mul(int a, int b) {
+        System.out.printf("Multiplication of two number is %.1f\n", (float)(a * b));
     }
-    void Div(int n,int a)
-    {
-        System.out.printf("Div of two number is %.1f",(float)n/a);
+
+    void div(int a, int b) {
+        
+            System.out.printf("Division of two number is %.2f\n", (float) a / b);
     }
-    void Mod(int n,int a)
-    {
-        System.out.printf("Mod of two number is %.1f",(float)n%a);
+
+    void mod(int a, int b) {
+        
+            System.out.printf("Modulus of two number is %d\n", (a % b));
+        
+        }
     }
-     
-}
