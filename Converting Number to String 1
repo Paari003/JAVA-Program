@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+   Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+   switch (n) {
+            case 0:
+                System.out.println("Integer is "+n+" and String is Zero");
+                break;
+            case 1:
+                 System.out.println("Integer is "+n+" and String is One");
+                break;
+            case 2:
+                System.out.println("Integer is "+n+" and String is Two");
+                break;
+            case 3:
+                System.out.println("Integer is "+n+" and String is Three");
+                break;
+            case 4:
+                System.out.println("Integer is "+n+" and String is Four");
+                break;
+           case 5:
+               System.out.println("Integer is "+n+" and String is Five");
+                break;
+           case 6:
+                System.out.println("Integer is "+n+" and String is Six");
+                break;
+           case 7:
+                System.out.println("Integer is "+n+" and String is Seven");
+                break;
+            case 8:
+                System.out.println("Integer is "+n+" and String is Eight");
+                break;
+            case 9:
+                System.out.println("Integer is "+n+" and String is Nine");
+                break;
+           
+            default:
+                System.out.println("Invalid Input");
+        }
+    
+    }
+}
