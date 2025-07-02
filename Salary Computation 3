@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.printf("%.2f",salary(n));
+    }
+    public static double salary(int n){
+        double hra,da;
+        if(n<15000)
+        {
+            hra=0.15*n;
+            da=0.90*n;
+        }
+        else
+        {
+            hra=5000*n;
+            da=0.98*n;
+        }
+        return n+hra+da;
+    }
+}
