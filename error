@@ -1,65 +1,19 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
-public class Solution {
-
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        String str;
-        if(n>=0&&n<=9)
-        {
-         switch(n){
-            case '0':
-             str="Zero";
-             break;
-            
-            case '1':
-              str="One";
-             break; 
-                 
-             case '2':
-              str="Second";
-             break; 
-                 
-             case '3':
-              str="Three";
-             break; 
-                 
-             case '4':
-              str="Four";
-             break; 
-                 
-             case '5':
-              str="Five";
-             break; 
-                 
-             case '6':
-              str="Six";
-             break; 
-                 
-             case '7':
-              str="Seven";
-             break; 
-                 
-             case '8':
-              str="Eigth";
-             break; 
-                 
-             case '9':
-              str="Nine";
-             break; 
-                 
-            System.out.println("Integer is " +n+ " and String is "+str);
-        }
-        
-        }
-        else
-        {
-            System.out.println("Invalid Input");
-        }
+class A{
+    void student(int rollno,String name){
+        System.out.println("Enter rollno :"+rollno);
+        System.out.println("Enter name :"+name);
     }
+}
+
+public class Main extends A
+{
+	public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+	   int rollno=sc.nextInt();
+	   String name=sc.nextLine();
+	   Main obj=new Main();
+	   obj.student(rollno,name);
+	   
+	}
 }
