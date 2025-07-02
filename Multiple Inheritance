@@ -31,3 +31,54 @@ public class Main
 	   
 	}
 }
+
+
+
+////////////////
+
+
+
+
+
+
+import java.util.*;
+interface A{
+    void show();
+    }
+interface B{
+    void print(int rollno,String name,int mark,String subject);
+}
+
+class C implements A,B
+{
+    public void show(){
+        System.out.println("Student");
+    }
+    public void print(int rollno,String name,int mark,String subject){
+        System.out.println("Enter rollno :"+rollno);
+        System.out.println("Enter name :"+name);
+        System.out.println("Enter mark :"+mark);
+        System.out.println("Enter subject :"+subject);
+    }
+}
+
+public class Main 
+{
+	public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+	   System.out.println("Enter name :");
+	   String name=sc.nextLine();
+	    System.out.println("Enter subject :");
+	   String subject=sc.nextLine();
+	   System.out.println("Enter mark :");
+	   int mark=sc.nextInt();
+	   System.out.println("Enter rollno :");
+	   int rollno=sc.nextInt();
+	   C obj=new C();
+	   obj.show();
+	   obj.print(rollno,name,mark,subject);
+	}
+}
+
+
+
